@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bonny Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bonny Library</h1>
+    <nav>
+      <a href="#bookSection">Available Books</a>
+      <a href="#addBookSection">Add a New Book</a>
+      <a href="#contactSection">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Loading Spinner -->
+    <div id="spinner" style="display: none;">
+      <p>Loading...</p>
+    </div>
+
+    <!-- Section: Available Books -->
+    <section id="bookSection">
+      <h2>Available Books</h2>
+      <input type="text" id="searchInput" placeholder="Search by title, author, or ISBN" />
+      <p id="loadingMessage" style="display:none;">Loading books...</p>
+      <ul id="bookList"></ul>
+      <button id="submitSearch" type="button" class="styled-button">Submit</button>
+    </section>
+
+    <!-- Section: Add a New Book -->
+    <section id="addBookSection">
+      <h2>Add a New Book</h2>
+      <form id="addBookForm">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="text" id="isbn" placeholder="ISBN" required />
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <!-- Section: Contact Us -->
+    <section id="contactSection">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h3>Contact Information</h3>
+      <p>Email: support@bonnylibrary.com</p>
+      <p>Phone: +254-456-7890</p>
+      <p>Address: 123 Library Lane, Booktown, BK 56789</p>
+    </section>
+    <p>&copy; 2025 Bonny Library. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
